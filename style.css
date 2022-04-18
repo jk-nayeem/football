@@ -21,6 +21,9 @@ nav {
     align-items: center;
     margin-top: 42px;
 }
+.menu-button {
+    display: none;
+}
 .nav-options {
     font-size: 16px;
     width: 55%;
@@ -31,12 +34,10 @@ nav {
     text-decoration: none;
     color: white;
 }
-.login {
+.login a {
     background-color: #E02C6D;
     padding: 10px 24px;
     font-size: 16px;
-}
-.login a {
     text-decoration: none;
     color: white;
 }
@@ -76,8 +77,8 @@ nav {
     width: 40%;
 }
 .banner-area .image-area img{
-    width: 500px;
-    height: 418px;
+    width: 100%;
+    /* height: 418px; */
     padding-left: 60px;
 }
 
@@ -126,6 +127,10 @@ nav {
     font-weight: 700;
     margin: 8px 0px;
 }
+.highlights .title-area p {
+    font-weight: 400;
+    font-size: 16px;
+}
 .highlights .title-area a {
     text-decoration: none;
     padding: 10px 24px;
@@ -166,9 +171,10 @@ footer {
 .icon {
     width: 20%;
     align-items: center;
-    border-radius: 40%;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+}
+.icon a {
+    color: rgb(202, 199, 199);
 }
 
 /* Copyright Style  */
@@ -177,4 +183,396 @@ footer {
     margin-bottom: 0px;
     margin-top: 8px;
     text-align: center;
+    margin: 0 7px;
+}
+
+
+/* ---------------------------------------- 
+            Media Queries Style 
+----------------------------------------- */
+
+
+/* For Mobile View  */
+@media only screen and (max-width: 480px) {
+   
+     /* Navbar Style  */
+    .navbar {
+        width: 90%;
+    }
+    .nav-options {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        font-size: 22px;
+    }
+
+    /* Banner Area Style  */
+    .upper-section {
+        height: 700px;
+    }
+    .banner-area {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: normal;    
+    }
+    .banner-title {
+        font-size: 36px;
+    }
+    .banner-area .title-area {
+        width: 90%;
+        margin: auto;
+    }
+    .banner-area .image-area {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .banner-area .image-area img {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Main Area Style  */
+    .container {
+        width: 90%;
+        margin-bottom: 50px;
+
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* Highlights Area Style  */
+    .highlights {
+        grid-template-columns: repeat(1, 1fr);   
+    }
+    .highlights .title-area h2 {
+        font-size: 30px;
+    }
+    .highlights .image-area {
+        margin-top: 30px;
+    }
+
+    /* Footer Area Style  */
+    .lower-section {
+        width: 100%;
+    }
+    .logo {
+        width: 70%;
+    }
+    .social-icon .icons {
+        width: 45%;
+    }
+}
+
+/* For Tablet and Mobile Landscape View  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Navbar Style */
+
+    .upper-section {
+        height: 400px;
+    }
+    .navbar {
+        width: 90%;
+    }
+    .nav-options {
+        width: 80%;
+        font-size: 10px;
+    }
+    .login {
+        font-size: 10px;
+    }
+    
+    /* Banner Area Style  */
+
+    .banner-area {
+        justify-content: space-around;
+        align-items: center;    
+    }
+    .banner-title {
+        font-size: 28px;
+    }
+    .banner-area .title-area {
+        width: 40%;
+    }
+    .banner-area .image-area{
+        width: 40%;
+    }
+    .banner-area .image-area img{
+        width: 100%;
+        height: 250px;
+        padding: 0;
+    }
+    .banner-area .title-area a {
+        font-size: 10px;
+    }
+
+    /* Main Area Style  */
+
+    .container {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+    }
+
+    /* Highlights Area Style  */
+
+    .highlights {
+        grid-template-columns: repeat(1, 1fr);   
+    }
+    .highlights .title-area h2 {
+        font-size: 30px;
+    }
+    .highlights .title-area a {
+        font-size: 10px;
+    }
+    .highlights .image-area {
+        margin-top: 30px;
+    }
+
+    /* Footer Area Style  */
+
+    .lower-section {
+        width: 100%;
+    }
+    .logo {
+        width: 70%;
+    }
+    .social-icon .icons {
+        width: 30%;
+    }
+}
+
+/*------------------------------------------- For Tablet Landscape, Laptop and Small Desktops ----------------------------------------- */
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+   
+    .nav-options {
+        width: 65%;
+        font-size: 13px;
+    }
+    .login {
+        font-size: 14px;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .banner-area .banner-title a {
+        font-size: 14px;
+    }
+    .banner-area .image-area img {
+        width: 100%;
+    }
+
+    /* Main Area Style  */
+
+        /*------------------ No Change Needed I Think ----------------------*/
+
+    /* Highlights Area Style  */
+
+    .highlights .title-area h2 {
+        font-size: 30px;
+    }
+    .highlights .title-area a {
+        font-size: 14px;
+    }
+    .highlights .image-area img {
+        width: 100%;
+    }
+
+    /* Footer Area Style  */
+    
+        /*------------------ No Change Needed I Think ----------------------*/
+    
+}
+
+/* ----------------------- For Larger Desktops and Monitors ------------------ */
+
+@media only screen and (min-width: 1280) {
+    /* Navbar Style  */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        color: white;
+        align-items: center;
+        margin-top: 42px;
+    }
+    .menu-button {
+        display: none;
+    }
+    .nav-options {
+        font-size: 16px;
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-options a {
+        text-decoration: none;
+        color: white;
+    }
+    .login {
+        background-color: #E02C6D;
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+    .login a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Upper Banner Style  */
+
+    .upper-section {
+        height: 550px;
+        width: 100%;
+        background-color: #2D25A0;
+        margin-bottom: 50px;
+    }
+    .banner-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+    }
+    .banner-area .title-area {
+        width: 40%;
+    }
+    .banner-title {
+        color: white;
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .banner-area .title-area a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px 24px;
+        background-color: #E02C6D;
+    }
+    .banner-area .image-area{
+        width: 40%;
+    }
+    .banner-area .image-area img{
+        width: 100%;
+        /* height: 418px; */
+        padding-left: 60px;
+    }
+
+    /* Main Area Style  */
+
+    /* Common Area Style  */
+    .container {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    /* Player Area Style  */
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+    }
+    .player {
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+    }
+    .player img {
+        width: 100%;
+        height: 250px;
+    }
+    .player h3 {
+        margin: 10px 0 0 0;
+    }
+    .player p {
+        margin-top: 8px;
+    }
+
+    /* Highlights Area Style  */
+
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 45px;
+        align-items: center;
+    }
+    .highlights .title-area h2 {
+        font-size: 37px;
+        font-weight: 700;
+        margin: 8px 0px;
+    }
+    .highlights .title-area p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .highlights .title-area a {
+        text-decoration: none;
+        padding: 10px 24px;
+        color: white;
+        background-color: #E02C6D;
+    }
+    .highlights .image-area img {
+        width: 100%;
+    }
+
+    /* Footer Area Style  */
+
+    footer {
+        margin-bottom: 40px;
+    }
+    .lower-section {
+        width: 40%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        width: 90%;
+        margin: auto;
+    }
+    .logo img {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Social Icon style  */
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin: auto;
+    }
+    .icon {
+        width: 20%;
+        align-items: center;
+        font-size: 20px;
+    }
+    .icon a {
+        color: rgb(202, 199, 199);
+    }
+
+    /* Copyright Style  */
+
+    .copyright p {
+        margin-bottom: 0px;
+        margin-top: 8px;
+        text-align: center;
+        margin: 0 7px;
+    }
 }
