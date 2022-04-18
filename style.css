@@ -393,7 +393,6 @@ footer {
 }
 
 /* ----------------------- For Larger Desktops and Monitors ------------------ */
-
 @media only screen and (min-width: 1280) {
     /* Navbar Style  */
     nav {
